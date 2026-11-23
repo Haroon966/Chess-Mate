@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#262522">
+<title>Offline - Chess Mate</title>
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<style>
+html,body{margin:0;height:100%;background:#302e2b;color:#f2f2f2;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px calc(24px + env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) calc(24px + env(safe-area-inset-left))}
+img{width:96px;height:96px;border-radius:22px;margin-bottom:16px}
+h1{margin:0 0 8px;font-size:1.6rem} p{margin:.3em 0 1em;max-width:34ch;color:#bdbdbd}
+.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+a,button{font:inherit;font-weight:700;border-radius:10px;padding:12px 20px;border:0;cursor:pointer;text-decoration:none;min-height:44px;box-sizing:border-box}
+button{background:#81b64c;color:#1b2b10} a{background:#3d3a37;color:#fff}
+</style></head><body><main>
+<img src="icons/icon-192.png" alt="" width="96" height="96">
+<h1>You're offline</h1>
+<p>This page isn't saved on your device yet. Pages you've already visited still work without a connection.</p>
+<div class="row"><button id="retry">Try again</button><a href="index.html">Home</a><a href="play.html">Play</a><a href="learn.html">Learn</a></div>
+<script>document.getElementById('retry').onclick=function(){location.reload()};
+addEventListener('online',function(){location.reload()});</script>
+</main></body></html>

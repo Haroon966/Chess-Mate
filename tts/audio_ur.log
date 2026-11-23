@@ -1,0 +1,4 @@
+clips defined: 653; per coach/lang (after --only): ayesha/ur=653, bilal/ur=653, hamza/ur=653, sana/ur=653
+to generate: 2612; already present (skipped): 0
+[25/2612] ok=25 fail=0 elapsed=28s eta=2888s
+[50/2612] ok=50 fail=0 elapsed=47s eta=2393s

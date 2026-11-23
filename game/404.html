@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#262522">
+<meta name="robots" content="noindex">
+<title>Page not found - Chess Mate</title>
+<style>
+html,body{margin:0;height:100%;background:#302e2b;color:#f2f2f2;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px}
+h1{margin:0 0 8px;font-size:3rem} p{margin:.3em 0 1.2em;color:#bdbdbd}
+a{display:inline-block;background:#81b64c;color:#1b2b10;font-weight:700;border-radius:10px;padding:12px 22px;text-decoration:none}
+</style></head><body><main>
+<h1>&#9822; 404</h1>
+<p>That page doesn't exist. Maybe the move was illegal.</p>
+<a id="home" href="index.html">Back to Chess Mate</a>
+<script>
+// GitHub Pages serves this file for ANY missing path, possibly several folders deep, so a plain
+// relative link would break. Project sites live at /<repo>/ ; user/custom-domain sites at /.
+// Probe whether the first path segment is a project folder (it has our manifest), else use the root.
+(function(){
+  var a=document.getElementById('home'), seg=location.pathname.split('/').filter(Boolean)[0];
+  function use(base){ a.setAttribute('href', base+'index.html'); var l=document.createElement('link'); l.rel='icon'; l.href=base+'icons/icon-192.png'; document.head.appendChild(l); }
+  use('/'); // sensible default until the probe answers
+  if(!seg || seg==='404.html') return;
+  var proj='/'+seg+'/';
+  fetch(proj+'manifest.webmanifest',{method:'HEAD',cache:'no-store'}).then(function(r){ if(r.ok) use(proj); }).catch(function(){});
+})();
+</script>
+</main></body></html>

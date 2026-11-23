@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chess (legacy single page)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#262522">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Chess Mate">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<script src="pwa.js" defer></script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2381b64c'/%3E%3Ctext x='50' y='74' font-size='72' text-anchor='middle' fill='%23fff'%3E%E2%99%9E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Noto+Naskh+Arabic&display=swap">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="coach/coach.css">
+</head>
+<body>
+<nav id="nav">
+  <div class="brand"><img class="appicon" src="icons/icon-192.png" alt="" width="34" height="34">Chess Mate</div>
+  <button class="navbtn" id="navHome"><i>🏠</i>Home</button>
+  <button class="navbtn" id="navBot"><i>🤖</i>Play Bots</button>
+  <button class="navbtn" id="navLearn"><i>📘</i>Learn</button>
+  <button class="navbtn" id="navTwo"><i>👥</i>Two Players</button>
+  <button class="navbtn" id="navBoard"><i>♟️</i>Board</button>
+  <button class="navbtn" id="navFlip"><i>🔄</i>Flip</button>
+  <button class="navbtn" id="navCoach"><i>🎓</i>Coach</button>
+  <button class="navbtn" id="navSettings"><i>⚙️</i>Settings</button>
+  <button class="navbtn" id="muteBtn"><i>🔊</i>Sound: On</button>
+  <div class="grow"></div>
+  <div class="ver">Local · v0.4</div>
+</nav>
+
+<!-- ============ Home page ============ -->
+<div id="homePage" class="page hide"></div>
+
+<!-- ============ Play with Bots page ============ -->
+<div id="botPage" class="page hide">
+  <div id="botLeft">
+    <h1>Play with Bots</h1>
+    <p class="lead">Pick an opponent. Ratings are approximate — start low and work your way up.</p>
+    <div id="resume"></div>
+    <div class="bgrid" id="bgrid"></div>
+  </div>
+  <div id="bsetup"></div>
+</div>
+
+<!-- ============ Game page ============ -->
+<div id="main" class="page hide">
+  <div id="boardCol">
+    <div class="bar pad" id="topBar"></div>
+    <div class="row">
+      <div id="eval"><div id="evalFill"></div><div id="evalTxt"></div></div>
+      <div id="boardWrap"><div id="board"></div><svg id="marks" viewBox="0 0 800 800"></svg><div id="overlay"></div></div>
+    </div>
+    <div class="bar pad" id="botBar"></div>
+  </div>
+
+  <div id="panel">
+    <div id="ptitle">Play</div>
+    <div id="coachBox" style="display:none"></div>
+    <div id="gameInfo"></div>
+    <div id="status"></div>
+    <div id="revLine"></div>
+    <select id="level" class="hide"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option></select>
+    <div id="lessonPane"></div>
+    <div id="moves"></div>
+    <div id="navrow">
+      <button id="bFirst" title="Start (↑)">⏮</button><button id="bPrev" title="Back (←)">◀</button>
+      <button id="bNext" title="Forward (→)">▶</button><button id="bLast" title="Latest (↓)">⏭</button>
+    </div>
+    <div id="acts">
+      <button class="primary" id="newBtn">New game</button><button id="undoBtn">Takeback</button><button id="flipBtn">Flip</button>
+      <button id="resignBtn">🏳 Resign</button><button id="drawBtn">½ Draw</button><button id="reviewBtn">📊 Review</button>
+      <button id="pgnBtn">📋 PGN / FEN</button>
+    </div>
+  </div>
+</div>
+
+<div id="promo"><div id="promoChoices"></div></div>
+<div id="modal"></div>
+<div id="toast"></div>
+
+<script src="engine.js"></script>
+<script src="pgn.js"></script>
+<script src="bots.js"></script>
+<script src="bot.js"></script>
+<script src="worker-src.js" onerror="void 0"></script>
+<script src="review-core.js"></script>
+<script src="review-pool.js"></script>
+<script src="review-history.js"></script>
+<script src="store.js"></script>
+<script src="shell.js"></script>
+<script src="home.js"></script>
+<script src="coach/data-embed.js" onerror="void 0"></script>
+<script src="coach/coach.js" onerror="void 0"></script>
+<script src="coach/coach-ui.js"></script>
+<script src="sound.js"></script>
+<script src="review-ui.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

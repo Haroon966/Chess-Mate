@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Chess Mate",
+  "short_name": "Chess Mate",
+  "description": "Play chess against bots and learn with a friendly spoken AI coach. Works offline; all data stays on your device.",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "theme_color": "#262522",
+  "background_color": "#302e2b",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["games", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Play a bot", "short_name": "Play", "url": "play.html?source=shortcut", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Learn chess", "short_name": "Learn", "url": "learn.html?source=shortcut", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Resume game", "short_name": "Resume", "url": "game.html?source=shortcut", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "coaches": [
+    {
+      "id": "ayesha",
+      "gender": "female",
+      "emoji": "👩🏽‍🏫",
+      "color": "#e4572e",
+      "name": {
+        "en": "Coach Ali",
+        "ur": "کوچ علی"
+      },
+      "bio": {
+        "en": "Warm and patient. Perfect if you are just starting out.",
+        "ur": "نرم مزاج اور صابر۔ نئے کھلاڑیوں کے لیے بہترین۔"
+      },
+      "voices": {
+        "en": "en-IN-NeerjaNeural",
+        "ur": "ur-PK-UzmaNeural"
+      }
+    },
+    {
+      "id": "sana",
+      "gender": "female",
+      "emoji": "👩🏻‍💼",
+      "color": "#2e86ab",
+      "name": {
+        "en": "Coach Zeeshan",
+        "ur": "کوچ ذیشان"
+      },
+      "bio": {
+        "en": "Cheerful and energetic. Keeps every game fun.",
+        "ur": "خوش مزاج اور پرجوش۔ ہر کھیل کو مزے دار بناتی ہیں۔"
+      },
+      "voices": {
+        "en": "en-US-AriaNeural",
+        "ur": "ur-IN-GulNeural"
+      }
+    },
+    {
+      "id": "bilal",
+      "gender": "male",
+      "emoji": "👨🏽‍🏫",
+      "color": "#4c956c",
+      "name": {
+        "en": "Coach Shoaib",
+        "ur": "کوچ شعیب"
+      },
+      "bio": {
+        "en": "Calm and wise. Explains the why behind every move.",
+        "ur": "پرسکون اور سمجھدار۔ ہر چال کی وجہ سمجھاتے ہیں۔"
+      },
+      "voices": {
+        "en": "en-IN-PrabhatNeural",
+        "ur": "ur-PK-AsadNeural"
+      }
+    },
+    {
+      "id": "hamza",
+      "gender": "male",
+      "emoji": "👨🏻‍🎓",
+      "color": "#8e6bbf",
+      "name": {
+        "en": "Coach Sameer",
+        "ur": "کوچ سمیر"
+      },
+      "bio": {
+        "en": "Upbeat and competitive. Like a friendly rival who wants you to win.",
+        "ur": "ہشاش بشاش اور مقابلہ پسند۔ ایک دوستانہ حریف جو آپ کی جیت چاہتا ہے۔"
+      },
+      "voices": {
+        "en": "en-US-GuyNeural",
+        "ur": "ur-IN-SalmanNeural"
+      }
+    }
+  ],
+  "languages": [
+    "en",
+    "ur"
+  ],
+  "levels": [
+    {
+      "id": "learn",
+      "name": {
+        "en": "Learn to Play",
+        "ur": "کھیلنا سیکھیں"
+      },
+      "desc": {
+        "en": "Step-by-step lessons. The coach shows you every piece and rule.",
+        "ur": "قدم بہ قدم سبق۔ کوچ ہر مہرہ اور اصول دکھاتا ہے۔"
+      }
+    },
+    {
+      "id": "friendly",
+      "name": {
+        "en": "Friendly Match",
+        "ur": "دوستانہ میچ"
+      },
+      "desc": {
+        "en": "Play a bot while the coach comments, warns you, and lets you retry.",
+        "ur": "بوٹ کے ساتھ کھیلیں، کوچ تبصرہ کرتا ہے، خبردار کرتا ہے اور دوبارہ کوشش کرنے دیتا ہے۔"
+      }
+    },
+    {
+      "id": "serious",
+      "name": {
+        "en": "Serious Game",
+        "ur": "سنجیدہ کھیل"
+      },
+      "desc": {
+        "en": "The coach stays quiet unless you ask for a hint.",
+        "ur": "کوچ خاموش رہتا ہے جب تک آپ مدد نہ مانگیں۔"
+      }
+    }
+  ]
+}
